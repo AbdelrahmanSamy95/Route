@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="all.min.css" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="yummy.css" />
+</head>
+
+<body class="bg-black">
+    <div id="loading">
+        <i class="fa fa-spinner fa-spin text-white fa-3x"></i>
+    </div>
+    <div class="side-navbar vh-100 position-fixed d-flex top-0">
+        <div class="nav-bar flex-column d-flex justify-content-between vh-100 p-3">
+            <div class="anchors">
+                <a href="Search.html" class="d-block py-3 text-decoration-none text-white">Search</a>
+                <a href="Categories.html" class="d-block py-3 text-decoration-none text-white">Categories</a>
+                <a href="Area.html" class="d-block py-3 text-decoration-none text-white">Area</a>
+                <a href="Ingredients.html" class="d-block py-3 text-decoration-none text-white">Ingredients</a>
+                <a href="contact.html" class="d-block py-3 text-decoration-none text-white">Contact Us</a>
+            </div>
+            <div>
+                <div class="footer">
+                    <div class="icons">
+                        <i class="fa-brands fa-facebook text-white"></i>
+                        <i class="fa-brands fa-twitter text-white"></i>
+                        <i class="fa-solid fa-globe text-white"></i>
+                    </div>
+                </div>
+                <div class="foooter text-white">
+                    <p>
+                        Copyright Â© 2019 All Rights
+                        <br />
+                        Reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="nav-mark d-flex flex-column justify-content-between py-4 text-center px-2 bg-white text-black">
+            <img src="logo.png" alt="" class="logo" />
+            <i class="fa-solid open-close-icon fa-2x fa-x fa-align-justify"></i>
+            <i class="fa-solid fa-bars fa-2x fa-align-justify d-none"></i>
+            <div>
+                <i class="fa-solid fa-globe d-block"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="container w-75" id="searchContainer">
+        <section class="row py-4">
+            <div class="col-md-6">
+            <input class="form-control me-2 bg-transparent" onkeyup=" NameSearch(this.value)" type="search" placeholder="Search by name" aria-label="Search" id="searchName">
+            </div>
+            <div class="col-md-6">
+                <input class="form-control me-2 bg-transparent"  onkeyup=" LetterSearch(this.value)" type="search" placeholder="Search by First Letter" aria-label="Search" id="searchName">
+            </div>
+        </section>
+    </div>
+    <div class="container">
+        <div class="row py-3 g-4" id="randomMeals">
+
+        </div>
+    </div>
+    <script src="jquery-3.6.3.min.js"></script>
+    <script src="Search.js"></script>
+</body>
+
+</html>
